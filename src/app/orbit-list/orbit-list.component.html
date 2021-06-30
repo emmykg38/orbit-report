@@ -1,3 +1,4 @@
+<!-- <div *ngFor = "let satellite of satellites"></div> -->
 <h3>Orbit Report</h3>
 <table>
     <tr class="header-row">
@@ -7,6 +8,13 @@
         <th>Orbit Type</th>
         <th>Launch Date</th>
     </tr>
-    <tr *ngFor = "let satellite of sourceList">{{sourceList.satellite}}</tr>
+    <tr *ngFor = "let satellite of satellites">
+        <td>{{satellite.name}}</td>
+        <td>{{satellite.type}}</td>
+        <td>{{satellite.operational}}</td>
+        <td>{{satellite.orbitType}}</td>
+        <td>{{satellite.launchDate}}</td>
+
+    </tr>
     <!--working on this-->
 </table>
