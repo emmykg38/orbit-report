@@ -19,6 +19,14 @@ export class Satellite implements OnInit {
   ngOnInit() {
   }
 
+  shouldShowWarning(){
+    if (this.type.toLowerCase() === 'space debris'.toLowerCase()) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 }
 
 
